@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SatQuery AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🛰️ SatQuery AI</h1>
+
+        <p>
+            Interactive Vision-Language Assistant for Satellite Intelligence
+        </p>
+    </header>
+
+
+    <main>
+
+        <section class="card">
+
+            <h2>Upload Satellite Image</h2>
+
+            <input
+                type="file"
+                id="imageInput"
+                accept="image/*"
+            >
+
+            <div id="imagePreview">
+                <p>No image selected</p>
+            </div>
+
+        </section>
+
+
+        <section class="card">
+
+            <h2>Ask Your Question</h2>
+
+            <textarea
+                id="queryInput"
+                placeholder="Example: What objects are visible in this satellite image?"
+            ></textarea>
+
+            <button onclick="analyzeImage()">
+                🔍 Analyze
+            </button>
+
+        </section>
+
+
+        <section class="card">
+
+            <h2>AI Result</h2>
+
+            <div id="result">
+
+                <p>
+                    Upload an image and ask a question to begin.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>SatQuery AI • SIH 2026</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
